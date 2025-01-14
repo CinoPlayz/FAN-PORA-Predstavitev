@@ -39,7 +39,9 @@ Treba je inicializirati Android Network razred
 
 ![Init](/assets/inicialization.png)
 
-Ustvarjanje preprostega GET requesta
+### Preprosti GET zahtevek
+
+Podamo URL in parser za rezultat
 
 ![get](/assets/simple_get.png)
 
@@ -47,7 +49,9 @@ Rezultat
 
 ![get_result](/assets/simple_get_result.png)
 
-Ustvarjanje GET requesta kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
+### Zahtevnejši GET zahtevek
+
+Ustvarimo GET zahtevek kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
 
 ![get](/assets/more_coplicated_get.png)
 
