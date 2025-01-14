@@ -36,5 +36,23 @@ Po dodaji knjižnice v build.gradle je treba dodati dovoljenje za internet v men
 ![Menifest](/assets/menifest_perrmission.png)
 
 Treba je inicializirati Android Network razred
-![Menifest](/assets/inicialization.png)
+
+![Init](/assets/inicialization.png)
+
+Ustvarjanje preprostega GET requesta
+
+![get](/assets/simple_get.png)
+
+Rezultat
+
+![get_result](/assets/simple_get.png)
+
+Ustvarjanje GET requesta kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
+
+![get](/assets/more_coplicated_get.png)
+
+Rezultat
+
+![get_result](/assets/more_coplicated_get_result.png)
+
 
