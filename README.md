@@ -51,12 +51,26 @@ Rezultat
 
 ### Zahtevnejši GET zahtevek
 
-Ustvarimo GET zahtevek kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
+Ustvarimo GET zahtevek kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, značka za možnost preklica zahteva, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
 
-![get](/assets/more_coplicated_get.png)
+![get_harder](/assets/more_coplicated_get.png)
+
+Preklic zahteve
+
+![cancel](/assets/cancel_zahtevek.png)
 
 Rezultat
 
-![get_result](/assets/more_coplicated_get_result.png)
+![get_harder_result](/assets/more_coplicated_get_result.png)
+
+### Predpomnenje zahteve
+
+Zahteve lahko predpomnimo, te se pa nam shranijo na notranji prostor v telefonu. Strežnik mora podpirati glave cache-control, max-age,max-stale za delovanje predpomnenja.
+
+![cache_zahtevek](/assets/cache_zahtevek.png)
+
+Shranjena datoteka
+
+![cache_save](/assets/cache_save.png)
 
 
