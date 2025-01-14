@@ -45,7 +45,7 @@ Ustvarjanje preprostega GET requesta
 
 Rezultat
 
-![get_result](/assets/simple_get.png)
+![get_result](/assets/simple_get_result.png)
 
 Ustvarjanje GET requesta kateremu podamo spremenljivko za pot v URL-ju, dodan header za bearer token, prioriteta zahteve, ki pa nam določi kdaj se naj izvede request, pa še executor, ki pa določi da se naj izvede zahteva na drugi niti. Za pridobivanje rezultata zahteve pa uporabimo JSONArray parser.
 
