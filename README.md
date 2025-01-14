@@ -29,4 +29,12 @@ Standardna odprto kodna licenca, ki omogoča prosto uporabo in modifikacijo kode
 
 Projekt vzdržuje primarno samo ena oseba. Zadnji commit in release pa je bil Avgusta 2024
 
+## Primeri Uporabe
+
+Po dodaji knjižnice v build.gradle je treba dodati dovoljenje za internet v menifest datoteko
+
+![Menifest](/assets/menifest_perrmission.png)
+
+Treba je inicializirati Android Network razred
+![Menifest](/assets/inicialization.png)
 
