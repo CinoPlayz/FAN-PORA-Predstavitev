@@ -2,7 +2,7 @@
 
 ## Zakaj 🤔
 
-Fast Android Networking je knjižnica za lažje upravljanje z omrežnjem. Omogoča ustvarjanje vseh HTTP vrst zahtev v omrežju, prenos datotek, nalaganje datotek, prekinjanje zahtev, prioritiziranje zahtev in direkten prenos slike v ImegeView widget. Omogoča HTTP/2 zahteve, za varno izmenljivost podatkov. Uporablja manj računalniških virov zaslugi Okio knjižnici, na kateri je zgrajena. 
+Fast Android Networking je knjižnica za lažje upravljanje z omrežnjem. Omogoča ustvarjanje vseh HTTP vrst zahtev v omrežju, prenos datotek, nalaganje datotek, prekinjanje zahtev, prioritiziranje zahtev in direkten prenos slike v ImegeView. Omogoča HTTP/2 zahteve, za varno izmenljivost podatkov. Uporablja manj računalniških virov zaslugi Okio knjižnici, na kateri je zgrajena. 
 
 ## Prednosti ✅
 - Preprosta sintaksa
@@ -82,9 +82,9 @@ Datoteke lahko prenesemo in sproti beležimo napredek
 ![down_progress](/assets/file_download.png)
 
 
-### Komponenta za slike
+### View za slike
 
-Knjižnica ima svojo komponento za slike, ki nam omogoča prenos slike kar v imageview.
+Knjižnica ima svoj view za slike, ki nam omogoča prenos slike kar direktno v imageview.
 
 ![image_xml](/assets/image_xml.png)
 
