@@ -1,0 +1,36 @@
+package com.example.farmcontractor.adapters
+
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.farmcontractor.databinding.RecyclerCardContractorViewBinding
+
+class ContractorAdapter(private val dataset: MutableList<String>, private val onItemClick: (String) -> Unit, private val onItemLongClick: (String) -> Boolean): RecyclerView.Adapter<ContractorAdapter.ViewHolder>() {
+
+    inner class ViewHolder(val binding: RecyclerCardContractorViewBinding): RecyclerView.ViewHolder(binding.root) {
+        init {
+            binding.root.setOnClickListener {
+                onItemClick(dataset[adapterPosition])
+            }
+            binding.root.setOnLongClickListener {
+                onItemLongClick(dataset[adapterPosition])
+                return@setOnLongClickListener true
+            }
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = RecyclerCardContractorViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
+    }
+
+    override fun getItemCount(): Int {
+        return dataset.size
+    }
+
+    @SuppressLint("SetTextI18n")
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.binding.textViewName.text = dataset[position]
+    }
+}

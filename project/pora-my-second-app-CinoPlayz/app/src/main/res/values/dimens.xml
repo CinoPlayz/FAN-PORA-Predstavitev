@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extraSmallSpacing">8dp</dimen>
+    <dimen name="smallSpacing">16dp</dimen>
+    <dimen name="lessThanMediumSpacing">24dp</dimen>
+    <dimen name="mediumSpacing">32dp</dimen>
+</resources>

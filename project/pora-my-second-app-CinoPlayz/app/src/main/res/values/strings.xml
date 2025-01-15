@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Farm Contractor</string>
+    <string name="label_name">Name</string>
+    <string name="label_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="label_contractor">Contractor</string>
+    <string name="label_history">History</string>
+    <string name="label_my_work">My Work</string>
+    <string name="label_active_work">Active work</string>
+    <string name="button_save">Save</string>
+    <string name="label_add">Add</string>
+    <string name="label_work">Work</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_contracts">Contracts</string>
+    <string name="label_active">Active</string>
+    <string name="label_finished">Finished</string>
+    <string name="error_generic">Error occurred</string>
+    <string name="error_token">Token Invalid</string>
+    <string name="error_connection">Connection problems to %1$s</string>
+    <string name="success_contract">Successfully added contract</string>
+    <string name="label_delet_work">Delete Work</string>
+    <string name="label_delete_id">Do you want to delete %1$s</string>
+    <string name="label_remove">Remove</string>
+    <string name="label_add_work">Adding Work</string>
+    <string name="label_update">Update</string>
+    <string name="label_update_work">Update Work</string>
+</resources>
