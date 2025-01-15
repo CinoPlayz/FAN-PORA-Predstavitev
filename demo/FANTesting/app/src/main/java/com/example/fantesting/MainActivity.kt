@@ -1,6 +1,7 @@
 package com.example.fantesting
 
 import android.os.Bundle
+import android.os.Environment
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
@@ -108,13 +109,16 @@ class MainActivity : AppCompatActivity() {
         val progressBar = findViewById<ProgressBar>(R.id.progressBar)
         val button = findViewById<Button>(R.id.button)
 
+        val pathDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).absolutePath
+
         button.setOnClickListener {
-            AndroidNetworking.download("https://shorturl.at/epMVt", "files", "image.png")
+            AndroidNetworking.download("https://shorturl.at/epMVt", pathDir, "image.png")
                 .setPriority(Priority.MEDIUM)
                 .setExecutor(Executors.newSingleThreadExecutor())
                 .build()
                 .setDownloadProgressListener(object: DownloadProgressListener{
                     override fun onProgress(bytesDownloaded: Long, totalBytes: Long) {
+                        println("$bytesDownloaded / $totalBytes")
                         runOnUiThread {
                             progressBar.progress = ((bytesDownloaded * 100 )/ totalBytes).toInt()
                         }
