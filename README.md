@@ -73,4 +73,22 @@ Shranjena datoteka
 
 ![cache_save](/assets/cache_save.png)
 
+### Prenos datotek
+
+Datoteke lahko prenesemo in sproti beležimo napredek
+
+![down_code](/assets/download.png)
+
+![down_progress](/assets/file_download.png)
+
+
+### Komponenta za slike
+
+Knjižnica ima svojo komponento za slike, ki nam omogoča prenos slike kar v imageview.
+
+![image_xml](/assets/image_xml.png)
+
+![image_code](/assets/image_code.png)
+
+![image_result](/assets/image_result.png)
 
